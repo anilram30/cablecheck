@@ -1,0 +1,33 @@
+# Template for a lab-controlled limit set. Copy, fill from the controlled document, and
+# pass the folder with  --limit-dir.
+[meta]
+id = "my-cable-xyz"
+title = "Cable XYZ acceptance limits (controlled copy rev. B)"
+standard = "internal spec 12345"
+clause = "table 4"
+status = "verified"
+provenance = "entered from controlled document rev. B on 2026-09-18 by S. Anil"
+nominal_impedance = 100.0
+rise_time_ps = 500.0
+connector_mask_m = 0.5
+impedance_window_m = 3.0
+max_length_m = 15.0
+
+[[limit]]
+quantity = "insertion_loss"
+kind = "max"
+unit = "dB"
+per_metre = true
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 600
+  expr = "0.040*sqrt(f) + 0.0010*f"
+
+[[limit]]
+quantity = "return_loss"
+kind = "min"
+unit = "dB"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 600
+  points = [[1, 20], [10, 20], [100, 15], [600, 10]]

@@ -1,0 +1,929 @@
+{
+ "good_15m": {
+  "results": {
+   "delay_per_metre[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns/m",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "group_delay[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "impedance_fitted[A]": {
+    "limit_at_worst": 95.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 99.99821561382308,
+    "unit": "ohm",
+    "value_at_worst": 99.99821561382308,
+    "worst_margin": 4.998215613823078,
+    "x_worst": null
+   },
+   "impedance_max[A]": {
+    "limit_at_worst": 110.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 102.8846708781938,
+    "unit": "ohm",
+    "value_at_worst": 102.8846708781938,
+    "worst_margin": 7.115329121806198,
+    "x_worst": null
+   },
+   "impedance_mean[A]": {
+    "limit_at_worst": 105.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 101.62611337747177,
+    "unit": "ohm",
+    "value_at_worst": 101.62611337747177,
+    "worst_margin": 3.3738866225282322,
+    "x_worst": null
+   },
+   "impedance_min[A]": {
+    "limit_at_worst": 90.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 100.02741112119045,
+    "unit": "ohm",
+    "value_at_worst": 100.02741112119045,
+    "worst_margin": 10.027411121190454,
+    "x_worst": null
+   },
+   "impedance_profile[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 1234,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ohm",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "insertion_loss[A]": {
+    "limit_at_worst": 0.6568999999999999,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 0.35731938652977496,
+    "worst_margin": 0.29958061347022497,
+    "x_worst": 1000000.0
+   },
+   "lcl[A]": {
+    "limit_at_worst": 49.41293982511959,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 76.55214930433127,
+    "worst_margin": 27.13920947921168,
+    "x_worst": 69885000.0
+   },
+   "lctl[A]": {
+    "limit_at_worst": 48.652057967612926,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 77.19626553676858,
+    "worst_margin": 28.544207569155652,
+    "x_worst": 58653750.0
+   },
+   "nvp[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": null,
+    "scalar_value": 0.6800798330200193,
+    "unit": "",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "phase_delay[A]": {
+    "limit_at_worst": 94.0,
+    "n_fail": 0,
+    "n_points": 799,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": 73.62601118547065,
+    "worst_margin": 20.373988814529355,
+    "x_worst": 3246250.0
+   },
+   "return_loss[A]": {
+    "limit_at_worst": 19.0,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 27.511314166274566,
+    "worst_margin": 8.511314166274566,
+    "x_worst": 1748750.0
+   }
+  },
+  "verdict": "PASS"
+ },
+ "lossy_15m": {
+  "results": {
+   "delay_per_metre[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns/m",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "group_delay[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "impedance_fitted[A]": {
+    "limit_at_worst": 105.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 100.01685851192123,
+    "unit": "ohm",
+    "value_at_worst": 100.01685851192123,
+    "worst_margin": 4.983141488078772,
+    "x_worst": null
+   },
+   "impedance_max[A]": {
+    "limit_at_worst": 110.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 105.76290218605294,
+    "unit": "ohm",
+    "value_at_worst": 105.76290218605294,
+    "worst_margin": 4.237097813947059,
+    "x_worst": null
+   },
+   "impedance_mean[A]": {
+    "limit_at_worst": 105.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 103.3355336915954,
+    "unit": "ohm",
+    "value_at_worst": 103.3355336915954,
+    "worst_margin": 1.6644663084045987,
+    "x_worst": null
+   },
+   "impedance_min[A]": {
+    "limit_at_worst": 90.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 100.40554683249755,
+    "unit": "ohm",
+    "value_at_worst": 100.40554683249755,
+    "worst_margin": 10.40554683249755,
+    "x_worst": null
+   },
+   "impedance_profile[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 1234,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ohm",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "insertion_loss[A]": {
+    "limit_at_worst": 15.851744617196298,
+    "n_fail": 801,
+    "n_points": 801,
+    "passed": false,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 20.161126169893613,
+    "worst_margin": -4.309381552697316,
+    "x_worst": 600000000.0
+   },
+   "lcl[A]": {
+    "limit_at_worst": 49.17382411371838,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 77.57016306242673,
+    "worst_margin": 28.396338948708348,
+    "x_worst": 66141250.0
+   },
+   "lctl[A]": {
+    "limit_at_worst": 48.6267491142176,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 75.60261647599415,
+    "worst_margin": 26.97586736177655,
+    "x_worst": 107322500.0
+   },
+   "nvp[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": null,
+    "scalar_value": 0.6798026309833439,
+    "unit": "",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "phase_delay[A]": {
+    "limit_at_worst": 94.0,
+    "n_fail": 0,
+    "n_points": 799,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": 73.81132163885174,
+    "worst_margin": 20.188678361148263,
+    "x_worst": 3246250.0
+   },
+   "return_loss[A]": {
+    "limit_at_worst": 19.0,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 22.17931451757295,
+    "worst_margin": 3.1793145175729514,
+    "x_worst": 2497500.0
+   }
+  },
+  "verdict": "FAIL"
+ },
+ "ripple_15m": {
+  "results": {
+   "delay_per_metre[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns/m",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "group_delay[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "impedance_fitted[A]": {
+    "limit_at_worst": 95.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 99.34945714621263,
+    "unit": "ohm",
+    "value_at_worst": 99.34945714621263,
+    "worst_margin": 4.349457146212629,
+    "x_worst": null
+   },
+   "impedance_max[A]": {
+    "limit_at_worst": 110.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 102.79463490831766,
+    "unit": "ohm",
+    "value_at_worst": 102.79463490831766,
+    "worst_margin": 7.205365091682339,
+    "x_worst": null
+   },
+   "impedance_mean[A]": {
+    "limit_at_worst": 105.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 101.60185666367377,
+    "unit": "ohm",
+    "value_at_worst": 101.60185666367377,
+    "worst_margin": 3.3981433363262283,
+    "x_worst": null
+   },
+   "impedance_min[A]": {
+    "limit_at_worst": 90.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 100.08929473776257,
+    "unit": "ohm",
+    "value_at_worst": 100.08929473776257,
+    "worst_margin": 10.089294737762572,
+    "x_worst": null
+   },
+   "impedance_profile[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 1236,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ohm",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "insertion_loss[A]": {
+    "limit_at_worst": 0.6568999999999999,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 0.35701449324986395,
+    "worst_margin": 0.299885506750136,
+    "x_worst": 1000000.0
+   },
+   "lcl[A]": {
+    "limit_at_worst": 48.87703177699328,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 75.87497491509477,
+    "worst_margin": 26.99794313810149,
+    "x_worst": 102081250.0
+   },
+   "lctl[A]": {
+    "limit_at_worst": 48.768229806157535,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 77.71346321385185,
+    "worst_margin": 28.945233407694317,
+    "x_worst": 104327500.0
+   },
+   "nvp[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": null,
+    "scalar_value": 0.6788212930624156,
+    "unit": "",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "phase_delay[A]": {
+    "limit_at_worst": 94.0,
+    "n_fail": 0,
+    "n_points": 799,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": 73.78641622151567,
+    "worst_margin": 20.213583778484335,
+    "x_worst": 386606250.0
+   },
+   "return_loss[A]": {
+    "limit_at_worst": 8.216569244113922,
+    "n_fail": 9,
+    "n_points": 801,
+    "passed": false,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 6.303406874772076,
+    "worst_margin": -1.9131623693418458,
+    "x_worst": 391098750.0
+   }
+  },
+  "verdict": "FAIL"
+ },
+ "twopair_5m": {
+  "results": {
+   "delay_per_metre[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns/m",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "delay_per_metre[B]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns/m",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "delay_skew[all]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "fext[A->B]": {
+    "limit_at_worst": 83.67,
+    "n_fail": 801,
+    "n_points": 801,
+    "passed": false,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 70.46561236084497,
+    "worst_margin": -13.20438763915503,
+    "x_worst": 1000000.0
+   },
+   "group_delay[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "group_delay[B]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "impedance_fitted[A]": {
+    "limit_at_worst": 105.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 100.97494163989845,
+    "unit": "ohm",
+    "value_at_worst": 100.97494163989845,
+    "worst_margin": 4.0250583601015535,
+    "x_worst": null
+   },
+   "impedance_fitted[B]": {
+    "limit_at_worst": 105.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 100.974986520399,
+    "unit": "ohm",
+    "value_at_worst": 100.974986520399,
+    "worst_margin": 4.025013479601,
+    "x_worst": null
+   },
+   "impedance_max[A]": {
+    "limit_at_worst": 110.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 102.09622896195302,
+    "unit": "ohm",
+    "value_at_worst": 102.09622896195302,
+    "worst_margin": 7.903771038046983,
+    "x_worst": null
+   },
+   "impedance_max[B]": {
+    "limit_at_worst": 110.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 102.09533256496101,
+    "unit": "ohm",
+    "value_at_worst": 102.09533256496101,
+    "worst_margin": 7.904667435038988,
+    "x_worst": null
+   },
+   "impedance_mean[A]": {
+    "limit_at_worst": 105.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 100.79651237605559,
+    "unit": "ohm",
+    "value_at_worst": 100.79651237605559,
+    "worst_margin": 4.203487623944412,
+    "x_worst": null
+   },
+   "impedance_mean[B]": {
+    "limit_at_worst": 105.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 100.79631876334624,
+    "unit": "ohm",
+    "value_at_worst": 100.79631876334624,
+    "worst_margin": 4.203681236653765,
+    "x_worst": null
+   },
+   "impedance_min[A]": {
+    "limit_at_worst": 90.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 99.26211920893279,
+    "unit": "ohm",
+    "value_at_worst": 99.26211920893279,
+    "worst_margin": 9.262119208932788,
+    "x_worst": null
+   },
+   "impedance_min[B]": {
+    "limit_at_worst": 90.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 99.26253885160425,
+    "unit": "ohm",
+    "value_at_worst": 99.26253885160425,
+    "worst_margin": 9.262538851604248,
+    "x_worst": null
+   },
+   "impedance_profile[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 464,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ohm",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "impedance_profile[B]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 464,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ohm",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "insertion_loss[A]": {
+    "limit_at_worst": 0.6568999999999999,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 0.1331015863994247,
+    "worst_margin": 0.5237984136005752,
+    "x_worst": 1000000.0
+   },
+   "insertion_loss[B]": {
+    "limit_at_worst": 0.6568999999999999,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 0.1334674554020507,
+    "worst_margin": 0.5234325445979492,
+    "x_worst": 1000000.0
+   },
+   "lcl[A]": {
+    "limit_at_worst": 49.50104830656889,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 77.63407748024282,
+    "worst_margin": 28.133029173673933,
+    "x_worst": 90101250.0
+   },
+   "lcl[B]": {
+    "limit_at_worst": 49.93821853834081,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 78.49974431175232,
+    "worst_margin": 28.56152577341151,
+    "x_worst": 78870000.0
+   },
+   "lctl[A]": {
+    "limit_at_worst": 49.2227120896069,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 77.49524507838015,
+    "worst_margin": 28.27253298877325,
+    "x_worst": 66890000.0
+   },
+   "lctl[B]": {
+    "limit_at_worst": 47.76405878240621,
+    "n_fail": 0,
+    "n_points": 788,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 76.81322916498215,
+    "worst_margin": 29.049170382575937,
+    "x_worst": 127538750.0
+   },
+   "next[A->B (far end)]": {
+    "limit_at_worst": 53.27249897801576,
+    "n_fail": 127,
+    "n_points": 668,
+    "passed": false,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 46.354923898100566,
+    "worst_margin": -6.917575079915196,
+    "x_worst": 111815000.0
+   },
+   "next[A->B]": {
+    "limit_at_worst": 53.31626836865967,
+    "n_fail": 160,
+    "n_points": 668,
+    "passed": false,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 46.71284165129302,
+    "worst_margin": -6.603426717366652,
+    "x_worst": 111066250.0
+   },
+   "nvp[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": null,
+    "scalar_value": 0.6615651441764226,
+    "unit": "",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "nvp[B]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": null,
+    "scalar_value": 0.6615659131495532,
+    "unit": "",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "phase_delay[A]": {
+    "limit_at_worst": 94.0,
+    "n_fail": 0,
+    "n_points": 799,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": 25.22860415859932,
+    "worst_margin": 68.77139584140068,
+    "x_worst": 4743750.0
+   },
+   "phase_delay[B]": {
+    "limit_at_worst": 94.0,
+    "n_fail": 0,
+    "n_points": 799,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": 25.22570993967592,
+    "worst_margin": 68.77429006032408,
+    "x_worst": 6990000.0
+   },
+   "return_loss[A]": {
+    "limit_at_worst": 19.0,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 31.482790775097236,
+    "worst_margin": 12.482790775097236,
+    "x_worst": 6990000.0
+   },
+   "return_loss[B]": {
+    "limit_at_worst": 19.0,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 31.47277050013018,
+    "worst_margin": 12.472770500130181,
+    "x_worst": 6990000.0
+   }
+  },
+  "verdict": "FAIL"
+ },
+ "unbalanced_10m": {
+  "results": {
+   "delay_per_metre[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns/m",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "group_delay[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "impedance_fitted[A]": {
+    "limit_at_worst": 95.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 99.03692423574978,
+    "unit": "ohm",
+    "value_at_worst": 99.03692423574978,
+    "worst_margin": 4.03692423574978,
+    "x_worst": null
+   },
+   "impedance_max[A]": {
+    "limit_at_worst": 110.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 102.41458987611287,
+    "unit": "ohm",
+    "value_at_worst": 102.41458987611287,
+    "worst_margin": 7.585410123887129,
+    "x_worst": null
+   },
+   "impedance_mean[A]": {
+    "limit_at_worst": 105.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 101.04464004660214,
+    "unit": "ohm",
+    "value_at_worst": 101.04464004660214,
+    "worst_margin": 3.95535995339786,
+    "x_worst": null
+   },
+   "impedance_min[A]": {
+    "limit_at_worst": 90.0,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": true,
+    "scalar_value": 99.7939589704544,
+    "unit": "ohm",
+    "value_at_worst": 99.7939589704544,
+    "worst_margin": 9.793958970454398,
+    "x_worst": null
+   },
+   "impedance_profile[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 848,
+    "passed": null,
+    "scalar_value": null,
+    "unit": "ohm",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "insertion_loss[A]": {
+    "limit_at_worst": 0.6568999999999999,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 0.2668979055737206,
+    "worst_margin": 0.3900020944262793,
+    "x_worst": 1000000.0
+   },
+   "lcl[A]": {
+    "limit_at_worst": 49.7131862947997,
+    "n_fail": 662,
+    "n_points": 788,
+    "passed": false,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 28.831403105213667,
+    "worst_margin": -20.88178318958603,
+    "x_worst": 86357500.0
+   },
+   "lctl[A]": {
+    "limit_at_worst": 47.079490143049796,
+    "n_fail": 788,
+    "n_points": 788,
+    "passed": false,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 10.11620096987934,
+    "worst_margin": -36.96328917317045,
+    "x_worst": 146257500.0
+   },
+   "nvp[A]": {
+    "limit_at_worst": null,
+    "n_fail": 0,
+    "n_points": 1,
+    "passed": null,
+    "scalar_value": 0.6757915931782287,
+    "unit": "",
+    "value_at_worst": null,
+    "worst_margin": null,
+    "x_worst": null
+   },
+   "phase_delay[A]": {
+    "limit_at_worst": 94.0,
+    "n_fail": 0,
+    "n_points": 799,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "ns",
+    "value_at_worst": 49.52602680367957,
+    "worst_margin": 44.47397319632043,
+    "x_worst": 2497500.0
+   },
+   "return_loss[A]": {
+    "limit_at_worst": 19.0,
+    "n_fail": 0,
+    "n_points": 801,
+    "passed": true,
+    "scalar_value": null,
+    "unit": "dB",
+    "value_at_worst": 28.490960502965716,
+    "worst_margin": 9.490960502965716,
+    "x_worst": 3246250.0
+   }
+  },
+  "verdict": "FAIL"
+ }
+}

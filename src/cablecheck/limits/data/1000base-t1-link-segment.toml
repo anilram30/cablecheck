@@ -1,0 +1,153 @@
+# IEEE 802.3bp 1000BASE-T1 link segment (Type A, up to 15 m, 1-600 MHz)
+[meta]
+id = "1000base-t1-link-segment"
+title = "1000BASE-T1 link segment, Type A (IEEE 802.3bp Clause 97.6)"
+standard = "IEEE Std 802.3bp-2016 (now IEEE 802.3-2022 Clause 97)"
+clause = "97.6.1 link segment characteristics"
+status = "transcribed-unverified"
+provenance = "Coefficients transcribed from public OPEN Alliance TC9 'Channel and Components Requirements for 1000BASE-T1' v2.3 and IEEE 802.3bp task-force material. VERIFY against the lab's controlled copy of the standard before use in release testing; this file is a format example, not a certified limit set."
+nominal_impedance = 100.0
+rise_time_ps = 500.0
+connector_mask_m = 0.5
+impedance_window_m = 3.0
+max_length_m = 15.0
+
+[[limit]]
+quantity = "insertion_loss"
+kind = "max"
+unit = "dB"
+note = "whole link segment incl. connectors; 1 <= f <= 600 MHz"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 600
+  expr = "0.0023*f + 0.5907*sqrt(f) + 0.0639/sqrt(f)"
+
+[[limit]]
+quantity = "return_loss"
+kind = "min"
+unit = "dB"
+note = "differential, both ends, 100 ohm reference"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 10
+  expr = "19"
+  [[limit.segment]]
+  fmin_mhz = 10
+  fmax_mhz = 40
+  expr = "19 - 10*log10(f/10)"
+  [[limit.segment]]
+  fmin_mhz = 40
+  fmax_mhz = 130
+  expr = "13"
+  [[limit.segment]]
+  fmin_mhz = 130
+  fmax_mhz = 400
+  expr = "13 - 10*log10(f/130)"
+  [[limit.segment]]
+  fmin_mhz = 400
+  fmax_mhz = 600
+  expr = "13 - 10*log10(400/130)"
+
+[[limit]]
+quantity = "lcl"
+kind = "min"
+unit = "dB"
+note = "mode conversion loss, near end (LCL), 10-600 MHz"
+  [[limit.segment]]
+  fmin_mhz = 10
+  fmax_mhz = 80
+  expr = "50 + 10*log10(f/80)"
+  [[limit.segment]]
+  fmin_mhz = 80
+  fmax_mhz = 600
+  expr = "72 - 11.51*log10(f)"
+
+[[limit]]
+quantity = "lctl"
+kind = "min"
+unit = "dB"
+note = "mode conversion transfer loss (LCTL), 10-600 MHz"
+  [[limit.segment]]
+  fmin_mhz = 10
+  fmax_mhz = 80
+  expr = "50 + 10*log10(f/80)"
+  [[limit.segment]]
+  fmin_mhz = 80
+  fmax_mhz = 600
+  expr = "72 - 11.51*log10(f)"
+
+[[limit]]
+quantity = "phase_delay"
+kind = "max"
+unit = "ns"
+note = "maximum link delay, 2-600 MHz"
+  [[limit.segment]]
+  fmin_mhz = 2
+  fmax_mhz = 600
+  expr = "94"
+
+[[limit]]
+quantity = "next"
+kind = "min"
+unit = "dB"
+applies_to = "pair-pair"
+note = "power-sum alien NEXT floor, used here as pair-to-pair NEXT, 100-600 MHz"
+  [[limit.segment]]
+  fmin_mhz = 100
+  fmax_mhz = 600
+  expr = "54 - 15*log10(f/100)"
+
+[[limit]]
+quantity = "fext"
+kind = "min"
+unit = "dB"
+applies_to = "pair-pair"
+note = "PSAACRF form used as pair-to-pair FEXT floor, 1-600 MHz"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 600
+  expr = "43.67 - 20*log10(f/100)"
+
+[[limit]]
+quantity = "impedance_fitted"
+kind = "range"
+unit = "ohm"
+scalar = true
+note = "fitted input impedance a + b/sqrt(f), band mean"
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  lower_expr = "95"
+  upper_expr = "105"
+
+[[limit]]
+quantity = "impedance_mean"
+kind = "range"
+unit = "ohm"
+scalar = true
+note = "characteristic impedance 100 ohm +/- 5 % at 500 ps rise time"
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  lower_expr = "95"
+  upper_expr = "105"
+
+[[limit]]
+quantity = "impedance_min"
+kind = "min"
+unit = "ohm"
+scalar = true
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  expr = "90"
+
+[[limit]]
+quantity = "impedance_max"
+kind = "max"
+unit = "ohm"
+scalar = true
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  expr = "110"

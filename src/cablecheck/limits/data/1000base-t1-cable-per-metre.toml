@@ -1,0 +1,143 @@
+# Cable *component* limits for 1000BASE-T1 harness cable, scaled to sample length
+[meta]
+id = "1000base-t1-cable-per-metre"
+title = "1000BASE-T1 cable component, length-scaled (OPEN Alliance TC9 cable requirements)"
+standard = "OPEN Alliance TC9 Channel and Components Requirements for 1000BASE-T1, v2.3"
+clause = "cable requirements (15 m reference length)"
+status = "transcribed-unverified"
+provenance = "IL is the link-segment curve scaled by length/15 m minus a connector allowance; RL/LCL/LCTL/delay are the component values quoted in TC9 material. VERIFY against the controlled document."
+nominal_impedance = 100.0
+rise_time_ps = 500.0
+connector_mask_m = 0.5
+impedance_window_m = 3.0
+max_length_m = 15.0
+
+[[limit]]
+quantity = "insertion_loss"
+kind = "max"
+unit = "dB"
+per_metre = true
+note = "per-metre share of the 15 m link-segment budget; multiplied by the sample length"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 600
+  expr = "(0.0023*f + 0.5907*sqrt(f) + 0.0639/sqrt(f))/15"
+
+[[limit]]
+quantity = "return_loss"
+kind = "min"
+unit = "dB"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 10
+  expr = "22"
+  [[limit.segment]]
+  fmin_mhz = 10
+  fmax_mhz = 40
+  expr = "22 - 10*log10(f/10)"
+  [[limit.segment]]
+  fmin_mhz = 40
+  fmax_mhz = 130
+  expr = "16"
+  [[limit.segment]]
+  fmin_mhz = 130
+  fmax_mhz = 600
+  expr = "16 - 10*log10(f/130)"
+
+[[limit]]
+quantity = "lcl"
+kind = "min"
+unit = "dB"
+  [[limit.segment]]
+  fmin_mhz = 10
+  fmax_mhz = 80
+  expr = "55 + 10*log10(f/80)"
+  [[limit.segment]]
+  fmin_mhz = 80
+  fmax_mhz = 600
+  expr = "77 - 11.51*log10(f)"
+
+[[limit]]
+quantity = "lctl"
+kind = "min"
+unit = "dB"
+  [[limit.segment]]
+  fmin_mhz = 10
+  fmax_mhz = 80
+  expr = "55 + 10*log10(f/80)"
+  [[limit.segment]]
+  fmin_mhz = 80
+  fmax_mhz = 600
+  expr = "77 - 11.51*log10(f)"
+
+[[limit]]
+quantity = "delay_per_metre"
+kind = "max"
+unit = "ns/m"
+  [[limit.segment]]
+  fmin_mhz = 2
+  fmax_mhz = 600
+  expr = "6"
+
+[[limit]]
+quantity = "next"
+kind = "min"
+unit = "dB"
+applies_to = "pair-pair"
+  [[limit.segment]]
+  fmin_mhz = 100
+  fmax_mhz = 600
+  expr = "57 - 15*log10(f/100)"
+
+[[limit]]
+quantity = "fext"
+kind = "min"
+unit = "dB"
+applies_to = "pair-pair"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 600
+  expr = "46.67 - 20*log10(f/100)"
+
+[[limit]]
+quantity = "impedance_fitted"
+kind = "range"
+unit = "ohm"
+scalar = true
+note = "fitted input impedance a + b/sqrt(f), band mean"
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  lower_expr = "95"
+  upper_expr = "105"
+
+[[limit]]
+quantity = "impedance_mean"
+kind = "range"
+unit = "ohm"
+scalar = true
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  lower_expr = "95"
+  upper_expr = "105"
+
+[[limit]]
+quantity = "impedance_min"
+kind = "min"
+unit = "ohm"
+scalar = true
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  expr = "92"
+
+[[limit]]
+quantity = "impedance_max"
+kind = "max"
+unit = "ohm"
+scalar = true
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  expr = "108"

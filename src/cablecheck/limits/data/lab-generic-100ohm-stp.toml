@@ -1,0 +1,87 @@
+# Generic in-house acceptance profile for a 100 ohm shielded twisted pair, 1-1000 MHz.
+# Deliberately simple; demonstrates the a*sqrt(f) + b*f + c/sqrt(f) insertion-loss form
+# that every cable standard uses and length scaling.
+[meta]
+id = "lab-generic-100ohm-stp"
+title = "Lab generic 100 ohm STP acceptance profile (example)"
+standard = "in-house"
+clause = ""
+status = "example"
+provenance = "Illustrative in-house limit set for demonstrations and tests."
+nominal_impedance = 100.0
+rise_time_ps = 500.0
+connector_mask_m = 0.5
+impedance_window_m = 3.0
+
+[[limit]]
+quantity = "insertion_loss"
+kind = "max"
+unit = "dB"
+per_metre = true
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 1000
+  expr = "0.045*sqrt(f) + 0.0012*f + 0.01/sqrt(f)"
+
+[[limit]]
+quantity = "return_loss"
+kind = "min"
+unit = "dB"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 20
+  expr = "20"
+  [[limit.segment]]
+  fmin_mhz = 20
+  fmax_mhz = 1000
+  expr = "20 - 10*log10(f/20)"
+
+[[limit]]
+quantity = "lcl"
+kind = "min"
+unit = "dB"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 1000
+  expr = "max(30, 50 - 10*log10(f/10))"
+
+[[limit]]
+quantity = "lctl"
+kind = "min"
+unit = "dB"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 1000
+  expr = "max(30, 50 - 10*log10(f/10))"
+
+[[limit]]
+quantity = "delay_per_metre"
+kind = "max"
+unit = "ns/m"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 1000
+  expr = "5.6"
+
+[[limit]]
+quantity = "impedance_fitted"
+kind = "range"
+unit = "ohm"
+scalar = true
+note = "fitted input impedance a + b/sqrt(f), band mean"
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  lower_expr = "95"
+  upper_expr = "105"
+
+[[limit]]
+quantity = "impedance_mean"
+kind = "range"
+unit = "ohm"
+scalar = true
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  lower_expr = "95"
+  upper_expr = "105"

@@ -1,0 +1,64 @@
+# OPEN Alliance 100BASE-T1 System Implementation Specification, Channel Type 2 (5 m cable segment)
+[meta]
+id = "100base-t1-channel-type2"
+title = "100BASE-T1 Channel Type 2, 5 m cable segment (OPEN Alliance SIS D1.0)"
+standard = "OPEN Alliance 100BASE-T1 System Implementation Specification D1.0; IEEE 802.3bw Clause 96.7"
+clause = "Channel Type 2 table"
+status = "transcribed-unverified"
+provenance = "Discrete table values from the public OPEN Alliance SIS; interpolated in log-frequency between the tabulated points. VERIFY against the controlled document."
+nominal_impedance = 100.0
+rise_time_ps = 500.0
+connector_mask_m = 0.3
+impedance_window_m = 2.0
+max_length_m = 5.0
+
+[[limit]]
+quantity = "insertion_loss"
+kind = "max"
+unit = "dB"
+note = "upper limit column of the Channel Type 2 table"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 66
+  points = [[1, 0.25], [10, 0.65], [33, 1.10], [66, 1.60]]
+
+[[limit]]
+quantity = "return_loss"
+kind = "min"
+unit = "dB"
+  [[limit.segment]]
+  fmin_mhz = 1
+  fmax_mhz = 66
+  expr = "25"
+
+[[limit]]
+quantity = "phase_delay"
+kind = "max"
+unit = "ns"
+  [[limit.segment]]
+  fmin_mhz = 2
+  fmax_mhz = 66
+  expr = "28.5"
+
+[[limit]]
+quantity = "impedance_fitted"
+kind = "range"
+unit = "ohm"
+scalar = true
+note = "fitted input impedance a + b/sqrt(f), band mean"
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  lower_expr = "95"
+  upper_expr = "105"
+
+[[limit]]
+quantity = "impedance_mean"
+kind = "range"
+unit = "ohm"
+scalar = true
+  [[limit.segment]]
+  fmin_mhz = 0
+  fmax_mhz = 1e9
+  lower_expr = "95"
+  upper_expr = "110"

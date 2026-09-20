@@ -1,0 +1,27 @@
+{
+  "out": "reports",
+  "db": "results.sqlite",
+  "samples": [
+    {
+      "sample": {"sample_id": "good_15m", "cable_type": "1000base-t1-link-segment", "length_m": 15.0,
+                 "lot": "SYN-01", "operator": "S. Anil", "instrument": "VNA-1", "calibration_date": "2026-09-17",
+                 "temperature_c": 23.0, "site": "Roth"},
+      "files": [{"path": "tests/reference/good_15m.s4p", "port_map": "A+near,A-near,A+far,A-far",
+                 "fixture": {"method": "files", "left": "tests/reference/fixture_launch.s4p"}}]
+    },
+    {
+      "sample": {"sample_id": "ripple_15m", "cable_type": "1000base-t1-link-segment", "length_m": 15.0,
+                 "lot": "SYN-01", "operator": "S. Anil", "instrument": "VNA-1", "calibration_date": "2026-09-17",
+                 "temperature_c": 23.0, "site": "Roth"},
+      "files": [{"path": "tests/reference/ripple_15m.s4p",
+                 "fixture": {"method": "2xthru", "thru": "tests/reference/fixture_2xthru.s4p"}}]
+    },
+    {
+      "sample": {"sample_id": "twopair_5m", "cable_type": "1000base-t1-link-segment", "length_m": 5.0,
+                 "lot": "SYN-02", "operator": "S. Anil", "instrument": "VNA-1", "calibration_date": "2026-09-17",
+                 "temperature_c": 85.0, "site": "Roth", "notes": "hot chamber run"},
+      "files": [{"path": "tests/reference/twopair_5m_truth.s8p",
+                 "port_map": "A+near,A-near,A+far,A-far,B+near,B-near,B+far,B-far"}]
+    }
+  ]
+}

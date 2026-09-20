@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cablecheck"
+version = "0.1.1"
+description = "Measurement-to-report pipeline for high-frequency automotive data cables: Touchstone in, fixture de-embedding, mixed-mode quantities, limit-line verdicts, reports and a results database."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Sreeram Anil" }]
+keywords = ["s-parameters", "touchstone", "vna", "automotive-ethernet", "signal-integrity", "de-embedding", "mixed-mode", "1000base-t1", "cable-testing", "python"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov", "ruff>=0.8"]
+
+[project.urls]
+Homepage = "https://github.com/anilram30/cablecheck"
+Toolchain = "https://github.com/anilram30/hf-cable-toolchain"
+Report = "https://github.com/anilram30/cablecheck/blob/main/docs/report.pdf"
+Issues = "https://github.com/anilram30/cablecheck/issues"
+Changelog = "https://github.com/anilram30/cablecheck/blob/main/CHANGELOG.md"
+
+[project.scripts]
+cablecheck = "cablecheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"cablecheck.limits" = ["data/*.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 160
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+# E702 and E731: this codebase deliberately groups short related statements on one line
+# (plotting calls, tuple unpacking) and uses small lambdas for local helpers.
+# E741: `l` reads naturally for an inductance or a length in transmission-line code.
+ignore = ["E702", "E731", "E741"]

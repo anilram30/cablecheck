@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "cablecheck: Turns a high-frequency cable measurement into a standards-based engineering verdict and a report"
+abstract: "Turns a high-frequency cable measurement into a standards-based engineering verdict and a report."
+type: software
+authors:
+  - family-names: Anil
+    given-names: Sreeram
+    email: sreeramanil30@gmail.com
+repository-code: "https://github.com/anilram30/cablecheck"
+license: MIT
+keywords:
+  - s-parameters
+  - touchstone
+  - vna
+  - automotive-ethernet
+  - signal-integrity
+  - de-embedding
+  - mixed-mode
+  - 1000base-t1
+  - cable-testing
+  - python
